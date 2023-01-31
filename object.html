@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+
+        // constructor function
+        function Person() { // untuk penamaan function-nya huruf depan harus kapital
+            this.firstName = ""
+            this.midleName = ""
+            this.lastName = ""
+            this.sayHello = function(name){ // method constructor function
+                console.info(`hello ${name}, my name is ${this.firstName}`)
+            }
+        } /* constructor function digunakan untuk  membungkus properti yang akan di panggil oleh object menggunakan  function */
+
+        // objectnya 
+        const tyo = new Person() // cara manggil function
+        tyo.firstName = "Hendry"  //  cara mengisi value
+        tyo.midleName = "Pras"
+        tyo.lastName = "Tyo"
+        tyo.sayHello("budi")
+
+        const aris =new Person()
+        aris.firstName = "Achmad"
+        aris.midleName = "Aris"
+        aris.lastName = "hermawan"
+        aris.sayHello("budi")
+
+        console.log(tyo)
+        console.log(aris)
+
+
+    </script>
+</body>
+</html>
